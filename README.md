@@ -41,6 +41,26 @@ Required Environments:
     commitizen init cz-conventional-changelog --yarn --dev --exact
     ```
 
+## Conventional commit messages as a global utility
+
+* Install your preferred `commitizen` adapter globally:
+
+    ```bash
+    npm install -g cz-conventional-changelog
+    ```
+
+* Create a `.czrc` file in your `home` directory, with `path` referring to the preferred, globally installed, `commitizen` adapter:
+
+    ```bash
+    echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
+    ```
+
+* Commit your changes:
+
+    ```bash
+    git cz
+    ```
+
 ## Reference
 
 * [Commitizen for contributors](https://github.com/commitizen/cz-cli)
